@@ -1,0 +1,49 @@
+.header {
+  background-color: #010A12;
+  padding: 1rem 2rem;
+  color: #E2E2B6;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 7rem;
+}
+
+.link {
+  color: #E2E2B6; /* ou autre */
+  text-decoration: none;
+  margin: 0 20px;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+/* Soulignement pour la page active */
+.link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #E2E2B6; 
+}
+

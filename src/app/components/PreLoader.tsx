@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import "./preloader.css";
+import "../styles/preloader.css";
 import { preLoaderAnim } from "@/app/animations/Index"; // Vérifie la casse
 
 function Preloader() {
@@ -14,7 +14,7 @@ function Preloader() {
       <div className="text-container">
         <span>Développeuse,</span>
         <span>motivée,</span>
-        <span>en recherche d'une alternance.</span>
+        <span>{"en recherche d'une alternance."}</span>
       </div>
     </div>
   );
