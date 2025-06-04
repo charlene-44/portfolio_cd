@@ -1,4 +1,6 @@
 import Preloader from "@/app/components/PreLoader";
+// import Image from "next/image";
+// import data from "./data/data.json";
 
 export default function Home() {
   return (

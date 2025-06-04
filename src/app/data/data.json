@@ -1,0 +1,18 @@
+{
+  "presentation": {
+    "texte": "Actuellement en formation de développeuse web full-stack à Ada Tech School, je suis à la recherche d’une alternance en contrat de professionnalisation d’un an à trois ans dès juillet 2025. En effet, j’aimerai passer un titre RNCP 7 de niveau master après mon titre RNCP 6.",
+    "image": "/assets/photo-profil.png"
+  },
+  "technos": [
+    { "name": "Java", "logo": "/assets/tech/java.png" },
+    { "name": "JavaScript", "logo": "/assets/tech/js.png" },
+    { "name": "PHP", "logo": "/assets/tech/php.png" },
+    { "name": "Symfony", "logo": "/assets/tech/symfony.png" },
+    { "name": "Spring", "logo": "/assets/tech/spring.png" },
+    { "name": "SQL", "logo": "/assets/tech/sql.png" },
+    { "name": "HTML5", "logo": "/assets/tech/html.png" },
+    { "name": "CSS3", "logo": "/assets/tech/css.png" },
+    { "name": "React", "logo": "/assets/tech/react.png" },
+    { "name": "Angular", "logo": "/assets/tech/angular.png" }
+  ]
+}
