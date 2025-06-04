@@ -18,26 +18,25 @@ const Header = () => {
             width={150}
             height={100}
           />
-          
         </Link>
         <nav className="nav">
           <Link
             href="/projets"
-            className={pathname === "./pages/Projets.tsx" ? "link active" : "link"}
+            className={pathname === "/projets" ? "link active" : "link"}
           >
             Projets
           </Link>
 
           <Link
             href="/cv"
-            className={pathname === "./pages/Cv.tsx" ? "link active" : "link"}
+            className={pathname === "/cv" ? "link active" : "link"}
           >
             CV
           </Link>
 
           <Link
             href="/contact"
-            className={pathname === "./pages/Contact.tsx" ? "link active" : "link"}
+            className={pathname === "/contact" ? "link active" : "link"}
           >
             Contact
           </Link>
