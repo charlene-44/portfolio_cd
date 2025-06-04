@@ -2,6 +2,7 @@
   background-color: #010A12;
   padding: 1rem 2rem;
   color: #E2E2B6;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .container {

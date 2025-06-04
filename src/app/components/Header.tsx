@@ -15,6 +15,7 @@ const Header = () => {
           <Image
             src="./assets/logo.svg"
             alt="Logo Charlène Duret"
+            title="Logo Charlène Duret"
             width={150}
             height={100}
           />
