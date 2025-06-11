@@ -1,9 +1,22 @@
-/* src/app/styles/footer.css */
-
 .footer {
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 0.875rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #010A12;
   color: #FFF;
+  font-size: 0.9rem;
 }
 
+.footer p {
+  margin: 0;
+}
+
+.carbon-badge-right {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%) scale(0.75); /* Réduit et centré verticalement */
+  transform-origin: right center;
+}
