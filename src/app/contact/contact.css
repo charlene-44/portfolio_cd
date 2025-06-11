@@ -1,0 +1,54 @@
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-main {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  height: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact-info {
+  background-color: #010A12; 
+  color: #FFF;
+  border: 1px solid #FFF9D7;
+  box-sizing: border-box;
+}
+
+.social-media {
+  background-color: #FFF9D7;
+  color: #010A12;
+}
+
+.contact-info p,
+.social-media p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+}
