@@ -15,5 +15,83 @@
     { "name": "React", "logo": "/assets/tech/react.svg" },
     { "name": "Angular", "logo": "/assets/tech/angular.svg" },
     { "name": "Next", "logo": "/assets/tech/next.svg" }
-  ]
+  ],
+  "projects": [
+      {
+        "id": 1,
+        "title": "Site vitrine",
+        "description": "Un site qui référence les formations proposées par l'entreprise, permet de prendre rendez-vous et de lire les articles publiées par celle-ci.",
+        "image": "/assets/projects/iev.svg",
+        "technologies": ["Divi"],
+        "category": "wordpress",
+        "demoUrl": "https://innovationiseverywhere.com/",
+        "githubUrl": ""
+      },
+      {
+        "id": 2,
+        "title": "Quiz",
+        "description": "Il s'agit d'une application web de quiz qui permet aux utilisateurs de répondre à des questions sur différents thèmes.",
+        "image": "/assets/projects/quiz.svg",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "category": "frontend",
+        "demoUrl": "https://quizz-cyan-rho.vercel.app/",
+        "githubUrl": "https://github.com/charlene-44/charlene44.github.io"
+      },
+      {
+        "id": 3,
+        "title": "Dataviz & API",
+        "description": "Il s'agit d'une application web immersive dédiée aux fans de l'univers de Harry Potter. L'application permet aux utilisateurs d'explorer les sorts et les personnages emblématiques de la série, ainsi que de visualiser la répartition des personnages par maisons.",
+        "image": "/assets/projects/dataviz.svg",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "category": "frontend",
+        "demoUrl": "https://charlene-44-github-io.vercel.app/",
+        "githubUrl": "https://github.com/charlene-44/charlene-44.github.io"
+      },
+      {
+        "id": 4,
+        "title": "Extension navigateur",
+        "description": "Il s'agit d'une extension Chrome qui a pour but de rendre accessible tout type de site au plus grand nombre.",
+        "image": "/assets/projects/extension.svg",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "category": "frontend",
+        "githubUrl": "https://github.com/charlene-44/projet-collectif-nantes-extension-navigateur-dgct"
+      },
+      {
+        "id": 5,
+        "title": "Back office association",
+        "description": "Il s'agit d'une application permettant de recenser les collectes de déchets par lieu, par bénévole, par date.",
+        "image": "/assets/projects/defaultImage.svg",
+        "technologies": ["HTML", "Tailwind", "JavaScript", "PHP"],
+        "category": "backend",
+        "githubUrl": "https://github.com/charlene-44/back-office-association"
+      },
+      {
+        "id": 6,
+        "title": "Plateforme de vente de meubles",
+        "description": "Il s'agit d'une plateforme permettant d'acheter des meubles.",
+        "image": "/assets/projects/plateforme.svg",
+        "technologies": ["Spring Boot", "Angular", "MySQL", "Tailwind", "Java", "TypeScript"],
+        "category": "fullstack",
+        "githubUrl": "https://github.com/charlene-44/luxury_camps"
+      },
+      {
+        "id": 7,
+        "title": "Application mobile de surf back",
+        "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
+        "image": "/assets/projects/applicationMobile.svg",
+        "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
+        "category": "fullstack",
+        "githubUrl": "https://github.com/charlene-44/SurfBuddy_Back"
+      },
+       {
+        "id": 8,
+        "title": "Application mobile de surf front",
+        "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
+        "image": "/assets/projects/applicationMobile.svg",
+        "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
+        "category": "fullstack",
+        "githubUrl": "https://github.com/charlene-44/SurfBuddy_Front"
+      }
+    ]
 }
+
