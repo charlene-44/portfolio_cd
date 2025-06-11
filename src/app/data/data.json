@@ -1,97 +1,173 @@
 {
   "presentation": {
-    "texte": "Actuellement en formation de développeuse web full-stack à Ada Tech School, je suis à la recherche d’une alternance en contrat de professionnalisation d’un an à trois ans dès juillet 2025. En effet, j’aimerai passer un titre RNCP 7 de niveau master après mon titre RNCP 6.",
+    "texte": "Actuellement en formation de développeuse web full-stack à Ada Tech School, je suis à la recherche d'une alternance en contrat de professionnalisation d'un an à trois ans dès juillet 2025. En effet, j'aimerai passer un titre RNCP 7 de niveau master après mon titre RNCP 6.",
     "image": "/assets/photo-accueil.svg"
   },
   "technos": [
-    { "name": "Java", "logo": "/assets/tech/java.svg" },
-    { "name": "JavaScript", "logo": "/assets/tech/js.svg" },
-    { "name": "PHP", "logo": "/assets/tech/php.svg" },
-    { "name": "Symfony", "logo": "/assets/tech/symfony.svg" },
-    { "name": "Spring", "logo": "/assets/tech/spring.svg" },
-    { "name": "SQL", "logo": "/assets/tech/sql.svg" },
-    { "name": "HTML5", "logo": "/assets/tech/html.svg" },
-    { "name": "CSS3", "logo": "/assets/tech/css.svg" },
-    { "name": "React", "logo": "/assets/tech/react.svg" },
-    { "name": "Angular", "logo": "/assets/tech/angular.svg" },
-    { "name": "Next", "logo": "/assets/tech/next.svg" }
+    { "name": "Java", "logo": "/assets/tech/java.svg", "category": "backend" },
+    { "name": "JavaScript", "logo": "/assets/tech/js.svg", "category": "frontend" },
+    { "name": "PHP", "logo": "/assets/tech/php.svg", "category": "backend" },
+    { "name": "Symfony", "logo": "/assets/tech/symfony.svg", "category": "framework" },
+    { "name": "Spring Boot", "logo": "/assets/tech/spring.svg", "category": "framework" },
+    { "name": "SQL", "logo": "/assets/tech/sql.svg", "category": "backend" },
+    { "name": "HTML", "logo": "/assets/tech/html.svg", "category": "frontend" },
+    { "name": "CSS", "logo": "/assets/tech/css.svg", "category": "frontend" },
+    { "name": "React", "logo": "/assets/tech/react.svg", "category": "framework" },
+    { "name": "Angular", "logo": "/assets/tech/angular.svg", "category": "framework" },
+    { "name": "Next.js", "logo": "/assets/tech/next.svg", "category": "framework" }
   ],
   "projects": [
-      {
-        "id": 1,
-        "title": "Site vitrine",
-        "description": "Un site qui référence les formations proposées par l'entreprise, permet de prendre rendez-vous et de lire les articles publiées par celle-ci.",
-        "image": "/assets/projects/iev.svg",
-        "technologies": ["Divi"],
-        "category": "wordpress",
-        "demoUrl": "https://innovationiseverywhere.com/",
-        "githubUrl": ""
-      },
-      {
-        "id": 2,
-        "title": "Quiz",
-        "description": "Il s'agit d'une application web de quiz qui permet aux utilisateurs de répondre à des questions sur différents thèmes.",
-        "image": "/assets/projects/quiz.svg",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "category": "frontend",
-        "demoUrl": "https://quizz-cyan-rho.vercel.app/",
-        "githubUrl": "https://github.com/charlene-44/charlene44.github.io"
-      },
-      {
-        "id": 3,
-        "title": "Dataviz & API",
-        "description": "Il s'agit d'une application web immersive dédiée aux fans de l'univers de Harry Potter. L'application permet aux utilisateurs d'explorer les sorts et les personnages emblématiques de la série, ainsi que de visualiser la répartition des personnages par maisons.",
-        "image": "/assets/projects/dataviz.svg",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "category": "frontend",
-        "demoUrl": "https://charlene-44-github-io.vercel.app/",
-        "githubUrl": "https://github.com/charlene-44/charlene-44.github.io"
-      },
-      {
-        "id": 4,
-        "title": "Extension navigateur",
-        "description": "Il s'agit d'une extension Chrome qui a pour but de rendre accessible tout type de site au plus grand nombre.",
-        "image": "/assets/projects/extension.svg",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "category": "frontend",
-        "githubUrl": "https://github.com/charlene-44/projet-collectif-nantes-extension-navigateur-dgct"
-      },
-      {
-        "id": 5,
-        "title": "Back office association",
-        "description": "Il s'agit d'une application permettant de recenser les collectes de déchets par lieu, par bénévole, par date.",
-        "image": "/assets/projects/defaultImage.svg",
-        "technologies": ["HTML", "Tailwind", "JavaScript", "PHP"],
-        "category": "backend",
-        "githubUrl": "https://github.com/charlene-44/back-office-association"
-      },
-      {
-        "id": 6,
-        "title": "Plateforme de vente de meubles",
-        "description": "Il s'agit d'une plateforme permettant d'acheter des meubles.",
-        "image": "/assets/projects/plateforme.svg",
-        "technologies": ["Spring Boot", "Angular", "MySQL", "Tailwind", "Java", "TypeScript"],
-        "category": "fullstack",
-        "githubUrl": "https://github.com/charlene-44/luxury_camps"
-      },
-      {
-        "id": 7,
-        "title": "Application mobile de surf back",
-        "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
-        "image": "/assets/projects/applicationMobile.svg",
-        "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
-        "category": "fullstack",
-        "githubUrl": "https://github.com/charlene-44/SurfBuddy_Back"
-      },
-       {
-        "id": 8,
-        "title": "Application mobile de surf front",
-        "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
-        "image": "/assets/projects/applicationMobile.svg",
-        "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
-        "category": "fullstack",
-        "githubUrl": "https://github.com/charlene-44/SurfBuddy_Front"
-      }
-    ]
+    {
+      "id": 1,
+      "title": "Site vitrine",
+      "description": "Un site qui référence les formations proposées par l'entreprise, permet de prendre rendez-vous et de lire les articles publiées par celle-ci.",
+      "image": "/assets/projects/iev.svg",
+      "technologies": ["Divi"],
+      "category": "wordpress",
+      "demoUrl": "https://innovationiseverywhere.com/",
+      "githubUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "Quiz",
+      "description": "Il s'agit d'une application web de quiz qui permet aux utilisateurs de répondre à des questions sur différents thèmes.",
+      "image": "/assets/projects/quiz.svg",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "category": "frontend",
+      "demoUrl": "https://quizz-cyan-rho.vercel.app/",
+      "githubUrl": "https://github.com/charlene-44/charlene44.github.io"
+    },
+    {
+      "id": 3,
+      "title": "Dataviz & API",
+      "description": "Il s'agit d'une application web immersive dédiée aux fans de l'univers de Harry Potter. L'application permet aux utilisateurs d'explorer les sorts et les personnages emblématiques de la série, ainsi que de visualiser la répartition des personnages par maisons.",
+      "image": "/assets/projects/dataviz.svg",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "category": "frontend",
+      "demoUrl": "https://charlene-44-github-io.vercel.app/",
+      "githubUrl": "https://github.com/charlene-44/charlene-44.github.io"
+    },
+    {
+      "id": 4,
+      "title": "Extension navigateur",
+      "description": "Il s'agit d'une extension Chrome qui a pour but de rendre accessible tout type de site au plus grand nombre.",
+      "image": "/assets/projects/extension.svg",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "category": "frontend",
+      "githubUrl": "https://github.com/charlene-44/projet-collectif-nantes-extension-navigateur-dgct"
+    },
+    {
+      "id": 5,
+      "title": "Back office association",
+      "description": "Il s'agit d'une application permettant de recenser les collectes de déchets par lieu, par bénévole, par date.",
+      "image": "/assets/projects/defaultImage.svg",
+      "technologies": ["HTML", "Tailwind", "JavaScript", "PHP"],
+      "category": "backend",
+      "githubUrl": "https://github.com/charlene-44/back-office-association"
+    },
+    {
+      "id": 6,
+      "title": "Plateforme de vente de meubles",
+      "description": "Il s'agit d'une plateforme permettant d'acheter des meubles.",
+      "image": "/assets/projects/plateforme.svg",
+      "technologies": ["Spring Boot", "Angular", "MySQL", "Tailwind", "Java", "TypeScript"],
+      "category": "fullstack",
+      "githubUrl": "https://github.com/charlene-44/luxury_camps"
+    },
+    {
+      "id": 7,
+      "title": "Application mobile de surf back",
+      "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
+      "image": "/assets/projects/applicationMobile.svg",
+      "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
+      "category": "fullstack",
+      "githubUrl": "https://github.com/charlene-44/SurfBuddy_Back"
+    },
+    {
+      "id": 8,
+      "title": "Application mobile de surf front",
+      "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
+      "image": "/assets/projects/applicationMobile.svg",
+      "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
+      "category": "fullstack",
+      "githubUrl": "https://github.com/charlene-44/SurfBuddy_Front"
+    }
+  ],
+  "formations": [
+    {
+      "school": "Ada Tech School | Nantes",
+      "period": "2024 - 2026",
+      "details": [
+        "Apprentissage par la pratique",
+        "Méthodologie agile (sprint, daily, rétro, kanban)"
+      ]
+    },
+    {
+      "school": "ARINFO | Nantes",
+      "period": "2022 - 2023",
+      "details": [
+        "Titre concepteur designer UI (niveau BAC+3)"
+      ]
+    },
+    {
+      "school": "Greta CFA EST BRETAGNE | Rennes",
+      "period": "2021",
+      "details": [
+        "Titre designer web (niveau BAC+2)"
+      ]
+    },
+    {
+      "school": "ESRA BRETAGNE | Rennes",
+      "period": "2014 - 2017",
+      "details": [
+        "Diplôme d'Etudes Supérieures en Réalisation Audiovisuelle"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "year": "2024",
+      "title": "Chargée d'accueil",
+      "company": "NGE | Nantes",
+      "tasks": [
+        "Accueil physique et téléphonique des usagers",
+        "Encaissement"
+      ]
+    },
+    {
+      "year": "2023",
+      "title": "Webdesigneuse",
+      "company": "IEV | Nantes",
+      "tasks": [
+        "Alternance",
+        "Création de site web avec Wordpress et Divi",
+        "Maquettage / Intégration du contenu"
+      ]
+    },
+    {
+      "year": "2022",
+      "title": "Webdesigneuse en stage",
+      "company": "ACME-SIGHT | Rennes",
+      "tasks": [
+        "Créations de maquettes",
+        "Intégration de contenu sur Wordpress et Divi",
+        "Création de sites webs"
+      ]
+    }
+  ],
+  "savoirEtre": [
+    "Esprit d'équipe",
+    "Polyvalente",
+    "Autonome"
+  ],
+  "logiciels": [
+    "Figma",
+    "Suite Adobe",
+    "Visual Studio Code",
+    "Git",
+    "Postman"
+  ],
+  "langues": [
+    { "langue": "Anglais", "niveau": "B1" }
+  ]
 }
-
