@@ -1,8 +1,14 @@
+/* Header styles - conserve votre design existant */
 .header {
   background-color: #010A12;
   padding: 1rem 2rem;
   color: #E2E2B6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .container {
@@ -11,26 +17,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logoSection {
   display: flex;
-  align-items: center; 
+  align-items: center;
   gap: 0.5rem;
   text-decoration: none;
+  z-index: 1001;
 }
 
+.logoSection img {
+  height: auto;
+  max-height: 60px;
+  width: auto;
+}
+
+/* Navigation desktop */
 .nav {
   display: flex;
   gap: 7rem;
+  align-items: center;
 }
 
 .link {
-  color: #E2E2B6; /* ou autre */
+  color: #E2E2B6;
   text-decoration: none;
   margin: 0 20px;
   position: relative;
   padding-bottom: 4px;
+  transition: opacity 0.3s ease;
 }
 
 .link:hover {
@@ -45,6 +62,191 @@
   bottom: 0;
   height: 2px;
   width: 100%;
-  background-color: #E2E2B6; 
+  background-color: #E2E2B6;
 }
 
+/* Menu hamburger - caché par défaut */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #E2E2B6;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Overlay pour mobile */
+.nav-overlay {
+  display: none;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Tablette - 768px et moins */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .logoSection img {
+    max-height: 50px;
+  }
+  
+  .nav {
+    gap: 5rem;
+  }
+  
+  .link {
+    margin: 0 15px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile - 640px et moins */
+@media (max-width: 640px) {
+  .header {
+    padding: 0.75rem 1rem;
+  }
+  
+  .logoSection img {
+    max-height: 45px;
+    max-width: 120px;
+  }
+  
+  /* Afficher le menu hamburger */
+  .hamburger {
+    display: flex;
+  }
+  
+  /* Navigation mobile */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #010A12;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 100px 2rem 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    gap: 0;
+  }
+  
+  .nav-open {
+    right: 0;
+  }
+  
+  .nav .link {
+    color: #E2E2B6;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(226, 226, 182, 0.2);
+    border-radius: 0;
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .nav .link:last-child {
+    border-bottom: none;
+  }
+  
+  .nav .link.active::after {
+    display: none;
+  }
+  
+  .nav .link.active {
+    background-color: rgba(226, 226, 182, 0.1);
+  }
+  
+  /* Overlay pour fermer le menu */
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+}
+
+/* Très petit mobile - 480px et moins */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem;
+  }
+  
+  .logoSection img {
+    max-height: 40px;
+    max-width: 100px;
+  }
+  
+  .nav {
+    width: 100%;
+    right: -100%;
+  }
+  
+  .nav .link {
+    font-size: 1rem;
+    padding: 0.875rem 1.25rem;
+  }
+}
+
+/* Desktop large - amélioration pour grands écrans */
+@media (min-width: 1200px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  
+  .nav {
+    gap: 7rem;
+  }
+  
+  .link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Styles pour éviter le décalage de contenu avec le header fixe */
+body {
+  padding-top: 80px; /* Ajustez selon la hauteur de votre header */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-top: 65px;
+  }
+}
