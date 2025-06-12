@@ -31,10 +31,12 @@ function Preloader() {
 
   return (
     <div className="preloader">
-      <div className="text-container">
-        <span>Développeuse,</span>
-        <span>motivée,</span>
-        <span>{"en recherche d'une alternance."}</span>
+      <div className="preloader-container">
+        <div className="text-container">
+          <span className="text-item">Développeuse,</span>
+          <span className="text-item">motivée,</span>
+          <span className="text-item">{"en recherche d'une alternance."}</span>
+        </div>
       </div>
     </div>
   );
