@@ -157,7 +157,8 @@
     gap: 0;
   }
   
-  .nav-open {
+  /* CORRECTION ICI - Remplacer .nav-open par .nav.nav-open */
+  .nav.nav-open {
     right: 0;
   }
   
