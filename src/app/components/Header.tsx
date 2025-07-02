@@ -27,6 +27,7 @@ const Header = () => {
             title="Logo Charlène Duret"
             width={150}
             height={100}
+            className="logo" 
           />
         </Link>
 
