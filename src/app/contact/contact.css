@@ -1,3 +1,4 @@
+/* VOTRE CSS DE BASE - CONSERVÉ EXACTEMENT */
 .contact-wrapper {
   display: flex;
   justify-content: center;
@@ -22,7 +23,7 @@
 }
 
 .contact-info {
-  background-color: #010A12; 
+  background-color: #010A12;
   color: #FFF;
   border: 1px solid #FFF9D7;
   box-sizing: border-box;
@@ -33,8 +34,7 @@
   color: #010A12;
 }
 
-.contact-info p,
-.social-media p {
+.contact-info p, .social-media p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   max-width: 90%;
@@ -51,4 +51,80 @@
 .social-icons a img {
   width: 32px;
   height: 32px;
+}
+
+/* AJOUTS RESPONSIVE UNIQUEMENT */
+
+/* Tablette - 768px et moins */
+@media (max-width: 768px) {
+  .contact-main {
+    width: 90%;
+    height: 450px;
+  }
+  
+  .contact-section {
+    padding: 1.5rem;
+  }
+  
+  .contact-info p, .social-media p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+}
+
+/* Mobile - 640px et moins */
+@media (max-width: 640px) {
+  .contact-wrapper {
+    padding: 1rem;
+  }
+  
+  .contact-main {
+    flex-direction: column; /* Les blocs passent en colonne */
+    width: 95%;
+    height: auto; /* Hauteur automatique */
+    min-height: 400px;
+  }
+  
+  .contact-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .contact-info {
+    order: 1; /* Premier bloc */
+  }
+  
+  .social-media {
+    order: 2; /* Deuxième bloc en dessous */
+  }
+  
+  .contact-info p, .social-media p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    max-width: 100%;
+  }
+  
+  .social-icons {
+    gap: 1rem;
+  }
+}
+
+/* Très petit mobile - 480px et moins */
+@media (max-width: 480px) {
+  .contact-main {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+  
+  .contact-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .contact-info p, .social-media p {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  
+  .social-icons {
+    gap: 0.8rem;
+  }
 }

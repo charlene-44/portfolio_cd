@@ -132,7 +132,7 @@ const ProjectsPage = () => {
           <div className="cta-section">
             <div className="cta-card">
               <div>
-                <h3 className="cta-title">Intéressé par mon travail ?</h3>
+                <h3 className="cta-title">Intéressé(e) par mon travail ?</h3>
                 <p className="cta-description">
                   {"N'hésitez pas à me contacter pour une opportunité d'alternance."}
                 </p>
