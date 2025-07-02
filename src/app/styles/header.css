@@ -140,7 +140,7 @@
     display: flex;
   }
   
-  /* Navigation mobile */
+  /* Navigation mobile - FERMÉE par défaut */
   .nav {
     position: fixed;
     top: 0;
@@ -155,13 +155,15 @@
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     transition: right 0.3s ease;
     gap: 0;
+    z-index: 1002; /* AJOUTÉ - Plus élevé que l'overlay */
   }
   
-  /* CORRECTION ICI - Remplacer .nav-open par .nav.nav-open */
-  .nav.nav-open {
-    right: 0;
+  /* CORRECTION PRINCIPALE - Navigation mobile OUVERTE */
+  .nav-open {
+    right: 0 !important; /* Force l'ouverture du menu */
   }
   
+  /* Styles des liens dans le menu mobile */
   .nav .link {
     color: #E2E2B6;
     padding: 1rem 1.5rem;
@@ -171,6 +173,10 @@
     text-align: left;
     width: 100%;
     margin: 0;
+    display: block; /* AJOUTÉ - Force l'affichage en bloc */
+    position: relative; /* AJOUTÉ - Pour assurer le positionnement */
+    z-index: 1003; /* AJOUTÉ - Au-dessus de tout */
+    cursor: pointer; /* AJOUTÉ - Force le curseur pointer */
   }
   
   .nav .link:last-child {
@@ -185,16 +191,21 @@
     background-color: rgba(226, 226, 182, 0.1);
   }
   
-  /* Overlay pour fermer le menu */
+  /* Hover effect pour mobile */
+  .nav .link:hover {
+    background-color: rgba(226, 226, 182, 0.05);
+  }
+  
+  /* Overlay pour fermer le menu - CORRIGÉ */
   .nav-overlay {
-    display: block;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 1001; /* Plus bas que la nav mais plus haut que le reste */
+    display: block;
   }
 }
 
@@ -212,6 +223,10 @@
   .nav {
     width: 100%;
     right: -100%;
+  }
+  
+  .nav-open {
+    right: 0 !important;
   }
   
   .nav .link {

@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     <section className="contact-section contact-info">
       <p>
         Une envie d&apos;échanger, intéressé(e) par mon profil pour une future alternance ? Vous pouvez m&apos;écrire à cette adresse{' '}
-        <a href="mailto:charlene.3972@gmail.com">charlene.3972@gmail.com</a> et je vous répondrai avec grand plaisir. :)
+        <a href="mailto:charlene.3972@gmail.com">charlene.3572@gmail.com</a> et je vous répondrai avec grand plaisir. :)
       </p>
     </section>
     <section className="contact-section social-media">
