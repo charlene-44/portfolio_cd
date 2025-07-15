@@ -4,6 +4,11 @@
   align-items: center;
   color: #FFF;
   padding: 2rem;
+  overflow: hidden;
+}
+
+.home:-webkit-scrollbar {
+  display: none;                
 }
 
 .presentation {

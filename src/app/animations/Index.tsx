@@ -32,15 +32,20 @@ export const preLoaderAnim = (): void => {
       duration: 1,
       y: 70,
       skewY: -20,
+      opacity: 0, // 👈 Ajouté pour cacher le texte proprement
       stagger: 0.2,
       ease: "Power3.easeOut",
+    })
+    .to(".text-container", {
+      duration: 0.3,
+      opacity: 0, // 👈 Masque aussi le conteneur
+      ease: "power3.inOut",
     })
     .to("body", {
       duration: 0.1,
       css: { overflowY: "scroll" },
       ease: "power3.inOut",
     })
-     // Suppression du préchargeur à la fin
     .to(".preloader", {
       duration: 0.5,
       opacity: 0,
@@ -50,10 +55,11 @@ export const preLoaderAnim = (): void => {
       },
     });
 
-  // Ajout de l'appel aux animations pour éviter l'erreur
+  // Appels aux animations
   animateShapes();
   animateMainShape();
 };
+
 
 // Ouverture du menu
 export const openMenu = (): void => {

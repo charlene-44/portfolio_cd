@@ -1,11 +1,12 @@
 /* CV Styles */
 .cv-container {
-  min-height: 100vh;
   color: white;
-  padding: 2rem;
+height: 80vh;
+overflow-y: hidden;
 }
 
 .cv-content {
+   padding-top: 3rem;
   max-width: 1200px;
   margin: 0 auto;
 }
