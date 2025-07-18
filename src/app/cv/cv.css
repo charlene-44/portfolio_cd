@@ -2,7 +2,7 @@
 .cv-container {
   color: white;
 height: 80vh;
-overflow-y: hidden;
+overflow-y: auto;
 }
 
 .cv-content {
