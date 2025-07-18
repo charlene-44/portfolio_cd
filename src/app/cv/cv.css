@@ -3,12 +3,14 @@
   color: white;
 height: 80vh;
 overflow-y: auto;
+flex: 1;
 }
 
 .cv-content {
    padding-top: 3rem;
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1;
 }
 
 .cv-grid {
