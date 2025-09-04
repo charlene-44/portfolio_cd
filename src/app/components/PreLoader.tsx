@@ -35,7 +35,7 @@ function Preloader() {
         <div className="text-container">
           <span className="text-item">Développeuse,</span>
           <span className="text-item">motivée,</span>
-          <span className="text-item">{"en recherche d'une alternance."}</span>
+          <span className="text-item">curieuse.</span>
         </div>
       </div>
     </div>

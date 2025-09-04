@@ -1,6 +1,6 @@
 {
   "presentation": {
-    "texte": "Actuellement en formation de développeuse web full-stack à Ada Tech School, je suis à la recherche d'une alternance en contrat de professionnalisation d'un an à trois ans dès juillet 2025. En effet, j'aimerai passer un titre RNCP 7 de niveau master après mon titre RNCP 6.",
+    "texte": "Développeuse Full-Stack avec une expérience des technologies front-end (HTML/CSS, JavaScript, React) et back-end (PHP, Symfony, SQL). Formée aux méthodes agiles, j'aime créer des solutions web fonctionnelles en équipe. À la recherche de nouveaux défis pour développer mes compétences dans un environnement professionnel.",
     "image": "/assets/photo-accueil.svg"
   },
   "technos": [
@@ -96,7 +96,7 @@
   "formations": [
     {
       "school": "Ada Tech School | Nantes",
-      "period": "2024 - 2026",
+      "period": "2024 - 2025",
       "details": [
         "Apprentissage par la pratique",
         "Méthodologie agile (sprint, daily, rétro, kanban)"
