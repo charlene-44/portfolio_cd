@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import data from '../data/data.json';
-import '../cv/cv.css';
+import './cv.css';
 
 interface Experience {
   year: string;

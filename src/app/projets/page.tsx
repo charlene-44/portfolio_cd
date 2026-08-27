@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ExternalLink, Eye } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import data from '../data/data.json';
-import './projets/projets.css';
+import './projets.css';
 
 const ProjectsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
