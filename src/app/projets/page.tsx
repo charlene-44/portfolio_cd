@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ExternalLink, Eye } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import data from '../data/data.json';
-import '../projets/projets.css';
+import './projets/projets.css';
 
 const ProjectsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -21,8 +21,12 @@ const ProjectsPage = () => {
   ];
 
   const filteredProjects = selectedCategory === 'all'
-    ? data.projects
-    : data.projects.filter(project => project.category === selectedCategory);
+  ? data.projects
+  : data.projects.filter(project =>
+      Array.isArray(project.category)
+        ? project.category.includes(selectedCategory)
+        : project.category === selectedCategory
+    );
 
   return (
     <div className="projects-container">
