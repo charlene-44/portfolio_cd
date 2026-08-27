@@ -80,7 +80,7 @@
       "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
       "image": "/assets/projects/applicationMobile.svg",
       "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
-      "category": "fullstack",
+      "category": ["fullstack", "mobile", "backend"],
       "githubUrl": "https://github.com/charlene-44/SurfBuddy_Back"
     },
     {
@@ -89,7 +89,7 @@
       "description": "Solution CRM complète avec gestion clients, pipeline de ventes, rapports et intégrations tierces.",
       "image": "/assets/projects/applicationMobile.svg",
       "technologies": ["Symfony", "PHP", "MySQL", "React Native", "CSS", "TypeScript"],
-      "category": "fullstack",
+      "category": ["fullstack", "mobile", "frontend"],
       "githubUrl": "https://github.com/charlene-44/SurfBuddy_Front"
     }
   ],

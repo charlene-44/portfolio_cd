@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import '../contact/contact.css';
+import './contact.css';
 
 const Contact: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
     <section className="contact-section contact-info">
       <p>
         Une envie d&apos;échanger, intéressé(e) par mon profil ? Vous pouvez m&apos;écrire à cette adresse{' '}
-        <a href="mailto:charlene.3972@gmail.com">charlene.3572@gmail.com</a> et je vous répondrai avec grand plaisir. :)
+        <a href="mailto:charlene.3972@gmail.com">charlene.3572@gmail.com</a> et je vous répondrai avec grand plaisir.
       </p>
     </section>
     <section className="contact-section social-media">
